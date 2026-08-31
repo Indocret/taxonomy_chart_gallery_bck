@@ -1,0 +1,308 @@
+{
+  "generatedAt": "2026-08-31T10:13:33.439794+00:00",
+  "title": "BCK Taxonomic Chart Gallery",
+  "description": "Interactive BCK taxonomy visualizations generated from workbook, Krona, Sankey, and polygon files.",
+  "samples": [
+    {
+      "slug": "bckk_h",
+      "title": "BCKK-H",
+      "description": "Taxonomic profile for the BCKK-H sample.",
+      "aliases": [
+        "bckk_h",
+        "kronaplots_bckk_h",
+        "sankeyplots_bckk_h"
+      ],
+      "geojson": {
+        "href": "./charts/samples/bckk_h/BCKK-H.geojson"
+      },
+      "polygon": {
+        "fileName": "BCKK-H.geojson",
+        "href": "./charts/samples/bckk_h/BCKK-H.geojson",
+        "ringCount": 1,
+        "geometryTypes": [
+          "Feature",
+          "FeatureCollection",
+          "MultiPoint",
+          "Polygon"
+        ],
+        "bounds": {
+          "minLon": 75.9886685013771,
+          "maxLon": 75.99100135266781,
+          "minLat": 12.227393159645473,
+          "maxLat": 12.2283925
+        }
+      },
+      "charts": [
+        {
+          "kind": "krona",
+          "label": "Krona Chart",
+          "fileName": "Kronaplots_BCKK_H.html",
+          "href": "./charts/samples/bckk_h/Kronaplots_BCKK_H.html"
+        },
+        {
+          "kind": "sankey",
+          "label": "Sankey Chart",
+          "fileName": "Sankeyplots_BCKK_H.html",
+          "href": "./charts/samples/bckk_h/Sankeyplots_BCKK_H.html"
+        }
+      ],
+      "workbooks": [
+        {
+          "fileName": "BCKK_H.xlsx",
+          "href": "./charts/samples/bckk_h/BCKK_H.xlsx",
+          "sheetCount": 7
+        }
+      ],
+      "workbook": {
+        "fileName": "BCKK_H.xlsx",
+        "href": "./charts/samples/bckk_h/BCKK_H.xlsx",
+        "sheetCount": 7
+      },
+      "links": [
+        {
+          "kind": "krona",
+          "label": "Krona Chart",
+          "fileName": "Kronaplots_BCKK_H.html",
+          "href": "./charts/samples/bckk_h/Kronaplots_BCKK_H.html"
+        },
+        {
+          "kind": "sankey",
+          "label": "Sankey Chart",
+          "fileName": "Sankeyplots_BCKK_H.html",
+          "href": "./charts/samples/bckk_h/Sankeyplots_BCKK_H.html"
+        },
+        {
+          "kind": "viewer",
+          "label": "Entire Taxonomy",
+          "href": "./charts/workbook-viewer.html?workbook=samples/bckk_h/BCKK_H.xlsx&title=BCKK-H"
+        }
+      ]
+    },
+    {
+      "slug": "bckk_l",
+      "title": "BCKK-L",
+      "description": "Taxonomic profile for the BCKK-L sample.",
+      "aliases": [
+        "bckk_l",
+        "kronaplots_bckk_l",
+        "sankeyplots_bckk_l"
+      ],
+      "geojson": {
+        "href": "./charts/samples/bckk_l/BCKK-L.geojson"
+      },
+      "polygon": {
+        "fileName": "BCKK-L.geojson",
+        "href": "./charts/samples/bckk_l/BCKK-L.geojson",
+        "ringCount": 1,
+        "geometryTypes": [
+          "Feature",
+          "FeatureCollection",
+          "MultiPoint",
+          "Polygon"
+        ],
+        "bounds": {
+          "minLon": 75.99682308733463,
+          "maxLon": 75.99832780659199,
+          "minLat": 12.2175564,
+          "maxLat": 12.2190682368844
+        }
+      },
+      "charts": [
+        {
+          "kind": "krona",
+          "label": "Krona Chart",
+          "fileName": "Kronaplots_BCKK_L.html",
+          "href": "./charts/samples/bckk_l/Kronaplots_BCKK_L.html"
+        },
+        {
+          "kind": "sankey",
+          "label": "Sankey Chart",
+          "fileName": "Sankeyplots_BCKK_L.html",
+          "href": "./charts/samples/bckk_l/Sankeyplots_BCKK_L.html"
+        }
+      ],
+      "workbooks": [
+        {
+          "fileName": "BCKK_L.xlsx",
+          "href": "./charts/samples/bckk_l/BCKK_L.xlsx",
+          "sheetCount": 7
+        }
+      ],
+      "workbook": {
+        "fileName": "BCKK_L.xlsx",
+        "href": "./charts/samples/bckk_l/BCKK_L.xlsx",
+        "sheetCount": 7
+      },
+      "links": [
+        {
+          "kind": "krona",
+          "label": "Krona Chart",
+          "fileName": "Kronaplots_BCKK_L.html",
+          "href": "./charts/samples/bckk_l/Kronaplots_BCKK_L.html"
+        },
+        {
+          "kind": "sankey",
+          "label": "Sankey Chart",
+          "fileName": "Sankeyplots_BCKK_L.html",
+          "href": "./charts/samples/bckk_l/Sankeyplots_BCKK_L.html"
+        },
+        {
+          "kind": "viewer",
+          "label": "Entire Taxonomy",
+          "href": "./charts/workbook-viewer.html?workbook=samples/bckk_l/BCKK_L.xlsx&title=BCKK-L"
+        }
+      ]
+    },
+    {
+      "slug": "bckot_hi",
+      "title": "BCKOT-Hi",
+      "description": "Taxonomic profile for the BCKOT-Hi sample.",
+      "aliases": [
+        "bckot_hi",
+        "bckot_hl",
+        "kronaplots_bckot_hi",
+        "sankeyplots_bckot_hi"
+      ],
+      "geojson": {
+        "href": "./charts/samples/bckot_hi/BCKOT-Hl.geojson"
+      },
+      "polygon": {
+        "fileName": "BCKOT-Hl.geojson",
+        "href": "./charts/samples/bckot_hi/BCKOT-Hl.geojson",
+        "ringCount": 1,
+        "geometryTypes": [
+          "Feature",
+          "FeatureCollection",
+          "MultiPoint",
+          "Polygon"
+        ],
+        "bounds": {
+          "minLon": 75.9021384,
+          "maxLon": 75.9028506,
+          "minLat": 12.0864834,
+          "maxLat": 12.0876344
+        }
+      },
+      "charts": [
+        {
+          "kind": "krona",
+          "label": "Krona Chart",
+          "fileName": "Kronaplots_BCKOT_Hi.html",
+          "href": "./charts/samples/bckot_hi/Kronaplots_BCKOT_Hi.html"
+        },
+        {
+          "kind": "sankey",
+          "label": "Sankey Chart",
+          "fileName": "Sankeyplots_BCKOT_Hi.html",
+          "href": "./charts/samples/bckot_hi/Sankeyplots_BCKOT_Hi.html"
+        }
+      ],
+      "workbooks": [
+        {
+          "fileName": "BCKOT_Hi.xlsx",
+          "href": "./charts/samples/bckot_hi/BCKOT_Hi.xlsx",
+          "sheetCount": 7
+        }
+      ],
+      "workbook": {
+        "fileName": "BCKOT_Hi.xlsx",
+        "href": "./charts/samples/bckot_hi/BCKOT_Hi.xlsx",
+        "sheetCount": 7
+      },
+      "links": [
+        {
+          "kind": "krona",
+          "label": "Krona Chart",
+          "fileName": "Kronaplots_BCKOT_Hi.html",
+          "href": "./charts/samples/bckot_hi/Kronaplots_BCKOT_Hi.html"
+        },
+        {
+          "kind": "sankey",
+          "label": "Sankey Chart",
+          "fileName": "Sankeyplots_BCKOT_Hi.html",
+          "href": "./charts/samples/bckot_hi/Sankeyplots_BCKOT_Hi.html"
+        },
+        {
+          "kind": "viewer",
+          "label": "Entire Taxonomy",
+          "href": "./charts/workbook-viewer.html?workbook=samples/bckot_hi/BCKOT_Hi.xlsx&title=BCKOT-Hi"
+        }
+      ]
+    },
+    {
+      "slug": "bckot_ti",
+      "title": "BCKOT-Ti",
+      "description": "Taxonomic profile for the BCKOT-Ti sample.",
+      "aliases": [
+        "bckot_ti",
+        "kronaplots_bckot_ti",
+        "sankeyplots_bckot_ti"
+      ],
+      "geojson": {
+        "href": "./charts/samples/bckot_ti/BCKOT-Ti.geojson"
+      },
+      "polygon": {
+        "fileName": "BCKOT-Ti.geojson",
+        "href": "./charts/samples/bckot_ti/BCKOT-Ti.geojson",
+        "ringCount": 1,
+        "geometryTypes": [
+          "Feature",
+          "FeatureCollection",
+          "MultiPoint",
+          "Polygon"
+        ],
+        "bounds": {
+          "minLon": 75.8913252,
+          "maxLon": 75.89316811412573,
+          "minLat": 12.083779022479085,
+          "maxLat": 12.08555693226622
+        }
+      },
+      "charts": [
+        {
+          "kind": "krona",
+          "label": "Krona Chart",
+          "fileName": "Kronaplots_BCKOT_Ti.html",
+          "href": "./charts/samples/bckot_ti/Kronaplots_BCKOT_Ti.html"
+        },
+        {
+          "kind": "sankey",
+          "label": "Sankey Chart",
+          "fileName": "Sankeyplots_BCKOT_Ti.html",
+          "href": "./charts/samples/bckot_ti/Sankeyplots_BCKOT_Ti.html"
+        }
+      ],
+      "workbooks": [
+        {
+          "fileName": "BCKOT_Ti.xlsx",
+          "href": "./charts/samples/bckot_ti/BCKOT_Ti.xlsx",
+          "sheetCount": 7
+        }
+      ],
+      "workbook": {
+        "fileName": "BCKOT_Ti.xlsx",
+        "href": "./charts/samples/bckot_ti/BCKOT_Ti.xlsx",
+        "sheetCount": 7
+      },
+      "links": [
+        {
+          "kind": "krona",
+          "label": "Krona Chart",
+          "fileName": "Kronaplots_BCKOT_Ti.html",
+          "href": "./charts/samples/bckot_ti/Kronaplots_BCKOT_Ti.html"
+        },
+        {
+          "kind": "sankey",
+          "label": "Sankey Chart",
+          "fileName": "Sankeyplots_BCKOT_Ti.html",
+          "href": "./charts/samples/bckot_ti/Sankeyplots_BCKOT_Ti.html"
+        },
+        {
+          "kind": "viewer",
+          "label": "Entire Taxonomy",
+          "href": "./charts/workbook-viewer.html?workbook=samples/bckot_ti/BCKOT_Ti.xlsx&title=BCKOT-Ti"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entire Taxonomy</title>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+  <style>
+    :root {
+      --page-bg: #f4f7fa;
+      --panel-bg: #ffffff;
+      --accent: #176b74;
+      --accent-strong: #123b53;
+      --text: #123b53;
+      --muted: #5d7180;
+      --border: #dbe4e9;
+      --soft: #e8f3f3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--page-bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header,
+    main {
+      width: min(1200px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 32px 0 12px;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      color: var(--accent-strong);
+    }
+
+    header p,
+    .meta,
+    .message {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 14px;
+      border-radius: 8px;
+      background: var(--soft);
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 18px 0 16px;
+    }
+
+    .tabs button {
+      border: 0;
+      padding: 10px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      background: var(--soft);
+      color: var(--accent-strong);
+      font-weight: bold;
+    }
+
+    .tabs button.active {
+      background: var(--accent);
+      color: white;
+    }
+
+    .sheet-panel {
+      max-height: calc(100vh - 240px);
+      overflow: auto;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      background: var(--panel-bg);
+      box-shadow: 0 8px 24px rgba(19, 50, 71, 0.08);
+    }
+
+    .sheet-table {
+      width: 100%;
+      min-width: max-content;
+      border-collapse: collapse;
+    }
+
+    .sheet-table th,
+    .sheet-table td {
+      border: 1px solid var(--border);
+      padding: 8px 10px;
+      vertical-align: top;
+      white-space: nowrap;
+    }
+
+    .sheet-table thead th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      background: var(--soft);
+    }
+
+    .sheet-table .corner {
+      position: sticky;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      background: #dbeff1;
+    }
+
+    .sheet-table .row-header {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      background: #f7fbfc;
+      font-weight: 700;
+      text-align: right;
+    }
+
+    .sheet-table td {
+      background: white;
+    }
+
+    .error {
+      border: 1px solid #f3c0b7;
+      border-radius: 12px;
+      padding: 16px 18px;
+      background: #fff4f1;
+      color: #8a1f11;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="viewerTitle">Entire Taxonomy</h1>
+    <p id="viewerSubtitle">Use the tabs to move between sheets.</p>
+
+    <div class="toolbar">
+      <a class="back-link" href="../index.html">Back to gallery</a>
+      <div class="meta" id="viewerMeta"></div>
+    </div>
+  </header>
+
+  <main>
+    <div id="sheetTabs" class="tabs"></div>
+    <div id="sheetPanel" class="sheet-panel"></div>
+  </main>
+
+  <script src="./workbook-viewer.js"></script>
+</body>
+</html>

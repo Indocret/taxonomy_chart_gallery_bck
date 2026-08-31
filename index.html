@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Interactive taxonomic chart gallery"
+  >
+
+  <title>BCK Taxonomic Chart Gallery</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      color-scheme: light;
+      --page-bg: #f4f7fa;
+      --panel-bg: #ffffff;
+      --accent: #176b74;
+      --accent-strong: #123b53;
+      --text: #123b53;
+      --muted: #5d7180;
+      --border: #dbe4e9;
+      --soft: #e8f3f3;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--page-bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      padding: 48px 20px;
+      background: linear-gradient(135deg, var(--accent-strong), var(--accent));
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+    }
+
+    header p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: #dbeff1;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(1200px, calc(100% - 40px));
+      margin: 40px auto;
+    }
+
+    .sample-heading {
+      margin-bottom: 24px;
+    }
+
+    .sample-heading h2 {
+      margin: 0 0 8px;
+      font-size: 1.8rem;
+    }
+
+    .sample-heading p,
+    .status {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .status {
+      margin-bottom: 24px;
+    }
+
+    .chart-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .chart-card,
+    .empty-state,
+    .error-state {
+      background: var(--panel-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(19, 50, 71, 0.08);
+    }
+
+    .chart-card {
+      display: flex;
+      min-height: 390px;
+      padding: 28px;
+      flex-direction: column;
+    }
+
+    .chart-card h3 {
+      margin: 0 0 12px;
+      font-size: 1.4rem;
+    }
+
+    .chart-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .map-preview {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      margin: 18px 0 0;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #d7ded9;
+      pointer-events: none;
+    }
+
+    .map-preview canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .map-credit {
+      position: absolute;
+      right: 6px;
+      bottom: 5px;
+      padding: 2px 5px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.82);
+      color: #314c58;
+      font-size: 0.68rem;
+      line-height: 1.2;
+    }
+
+    .chart-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: auto;
+      padding-top: 20px;
+    }
+
+    .chart-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 16px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .chart-link.secondary {
+      background: var(--soft);
+      color: var(--accent);
+    }
+
+    .chart-link:hover {
+      background: #10545b;
+      color: white;
+    }
+
+    .chart-link.secondary:hover {
+      background: #d4ecec;
+      color: var(--accent-strong);
+    }
+
+    .empty-state,
+    .error-state {
+      padding: 24px;
+      color: var(--muted);
+    }
+
+    .error-state {
+      color: #8a1f11;
+      border-color: #f3c0b7;
+      background: #fff4f1;
+    }
+
+    footer {
+      padding: 24px;
+      color: #667986;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>BCK Taxonomic Chart Gallery</h1>
+
+    <p>
+      BCK taxonomic charts, farm boundary previews, and entire taxonomy in one place.
+    </p>
+  </header>
+
+  <main>
+    <section class="sample-heading">
+      <h2>Samples</h2>
+
+      <p>
+        Review each farm boundary and open its charts or entire taxonomy.
+      </p>
+    </section>
+
+    <p id="status" class="status">Loading samples...</p>
+    <section id="chartGrid" class="chart-grid" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    Interactive metagenomic taxonomic visualizations
+  </footer>
+
+  <script type="module" src="./scripts/gallery-page.js"></script>
+</body>
+</html>
+

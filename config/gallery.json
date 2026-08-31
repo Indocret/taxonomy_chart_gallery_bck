@@ -1,0 +1,56 @@
+{
+  "title": "BCK Taxonomic Chart Gallery",
+  "description": "Interactive BCK taxonomy visualizations generated from workbook, Krona, Sankey, and polygon files.",
+  "sourceDirectories": [
+    "source"
+  ],
+  "samples": {
+    "bckk_h": {
+      "title": "BCKK-H",
+      "description": "Taxonomic profile for the BCKK-H sample.",
+      "aliases": [
+        "BCKK_H",
+        "BCKK-H",
+        "BCKK H",
+        "Kronaplots_BCKK_H",
+        "Sankeyplots_BCKK_H"
+      ]
+    },
+    "bckk_l": {
+      "title": "BCKK-L",
+      "description": "Taxonomic profile for the BCKK-L sample.",
+      "aliases": [
+        "BCKK_L",
+        "BCKK-L",
+        "BCKK L",
+        "Kronaplots_BCKK_L",
+        "Sankeyplots_BCKK_L"
+      ]
+    },
+    "bckot_hi": {
+      "title": "BCKOT-Hi",
+      "description": "Taxonomic profile for the BCKOT-Hi sample.",
+      "aliases": [
+        "BCKOT_Hi",
+        "BCKOT-Hi",
+        "BCKOT Hi",
+        "BCKOT_Hl",
+        "BCKOT-Hl",
+        "BCKOT Hl",
+        "Kronaplots_BCKOT_Hi",
+        "Sankeyplots_BCKOT_Hi"
+      ]
+    },
+    "bckot_ti": {
+      "title": "BCKOT-Ti",
+      "description": "Taxonomic profile for the BCKOT-Ti sample.",
+      "aliases": [
+        "BCKOT_Ti",
+        "BCKOT-Ti",
+        "BCKOT Ti",
+        "Kronaplots_BCKOT_Ti",
+        "Sankeyplots_BCKOT_Ti"
+      ]
+    }
+  }
+}
